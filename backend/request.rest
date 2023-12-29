@@ -1,0 +1,97 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description":"descrição",
+    "price": 1010,
+    "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/65730ed6acff32cfd4d82ede
+
+###
+
+DELETE http://localhost:3000/api/services/65730ed6acff32cfd4d82ede
+
+###
+
+PUT http://localhost:3000/api/services/6573386b67792bf85dab087e
+Content-Type: application/json
+
+{
+    "name": "TESTE ATT SERVICE",
+    "description":"descrição",
+    "price": 1910,
+    "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+}
+
+###
+POST http://localhost:3000/api/parties 
+Content-Type: application/json
+
+{
+    "title": "meu evento",
+    "author": "Vini",
+    "description": "festa teste, realmente não existe",
+    "budget": 9600,
+    "image": "https://www.artix.com/media/1073/header-leftlogo.png",
+    "services":[
+        {
+            "name": "Algum serviço 1",
+            "description":"descrição",
+            "price": 10010,
+            "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description":"descrição",
+            "price": 1010,
+            "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+        }   
+    ]
+}
+
+###
+
+GET http://localhost:3000/api/parties 
+
+###
+
+GET http://localhost:3000/api/parties/658038de83c358fb162fb56d
+
+###
+
+DELETE http://localhost:3000/api/parties/658033bd1fd28840aa9a6c1a
+
+###
+PUT http://localhost:3000/api/parties/65807b2367940befc0eaa882
+Content-Type: application/json
+
+{
+    "title": "meu evento 4",
+    "author": "Vini",
+    "description": "festa teste, realmente não existe",
+    "budget": 9600,
+    "image": "https://www.artix.com/media/1073/header-leftlogo.png",
+    "services":[
+        {
+            "name": "Algum serviço 4",
+            "description":"descrição",
+            "price": 1000,
+            "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+        },
+        {
+            "name": "Algum serviço 5",
+            "description":"descrição",
+            "price": 1010,
+            "image": "https://account.aq.com/images/logos/logo-artixdragon-red.png"
+        }   
+    ]
+}
